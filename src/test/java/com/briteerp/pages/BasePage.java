@@ -17,9 +17,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public abstract class BasePage {
+public class BasePage {
 
-    @FindBy(css = "span.title-level-1")
+    @FindBy(css = "a[href='/point_of_sale']")
     public List<WebElement> menuOptions;
 
     @FindBy(css = "div[class='loader-mask shown']")

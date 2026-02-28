@@ -59,7 +59,7 @@ public class US01_LoginFunctionality_StepDefinitions_FS {
     }
 
 
-    @Then("an error message {string} should be displayed")
+   @Then("an error message {string} should be displayed")
     public void anErrorMessageShouldBeDisplayed(String expectedMessage) {
         String actualMessage= loginPage.getErrorMessage();
         Assert.assertEquals(actualMessage,expectedMessage);
